@@ -82,7 +82,7 @@ const BeautyWebView = ({
 
   return (
     <Modal visible={visible} transparent={false} animationType={animationType}>
-      <SafeAreaView style={[styles.container, { backgroundColor: backgroundColor }]}>
+      <View style={[styles.container, { backgroundColor: backgroundColor }]}>
         <Header
           backgroundColor={headerBackground}
           contentType={headerContent}
@@ -122,7 +122,7 @@ const BeautyWebView = ({
           onNavigationStateChange={onNavigationStateChange}
           incognito={incognito}
         />
-      </SafeAreaView>
+      </View>
     </Modal>
   );
 };
