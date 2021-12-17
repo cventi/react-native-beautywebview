@@ -2,11 +2,16 @@ import React, {useState} from 'react';
 import Menu from './Menu';
 import MenuItem from './MenuItem';
 import MenuDivider from './MenuDivider';
-import { StyleSheet, Image, TouchableOpacity, Linking, View } from 'react-native';
+import { 
+  StyleSheet, 
+  Image, 
+  TouchableOpacity, 
+  Linking, 
+  View,
+  Clipboard } from 'react-native';
 import { images } from '../res';
-import Clipboard from "@react-native-community/clipboard";
 
-export const CutomMenu = ({contentType, openBrowserTitle, copyLinkTitle, url, extraMenuItems}) => {
+export const CustomMenu = ({contentType, openBrowserTitle, copyLinkTitle, url, extraMenuItems}) => {
     const [menu, setMenu] = useState(null);
 
     const hideMenu = () => {
