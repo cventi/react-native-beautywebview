@@ -27,7 +27,9 @@ const BeautyWebView = ({
   menuIcon,
   onGoBack,
   onGoForward,
-  incognito
+  incognito,
+  cacheEnabled,
+  cacheMode
 }) => {
   const [progressRef, setProgressRef] = useState(null);
   const [backgroundProgressRef, setBackgroundProgressRef] = useState(null);
@@ -121,6 +123,8 @@ const BeautyWebView = ({
           onLoadStart={onLoadStart}
           onNavigationStateChange={onNavigationStateChange}
           incognito={incognito}
+          cacheEnabled={cacheEnabled}
+          cacheMode={cacheMode}
         />
       </View>
     </Modal>
