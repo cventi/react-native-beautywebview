@@ -139,6 +139,7 @@ export default App;
 | Params | Type | Default | Required | Description |
 | --- | --- | --- | --- | --- |
 | visible | boolean | false | YES | Visibility of modal |
+| incognito | boolean | default | NO | Incognito Mode |
 | onPressClose | function | - | YES | Run on press the close button (You must set visibilty as false) |  
 | url | string | - | YES | URL of the website |
 | backgroundColor | string | #fff | - | Background color of view |
