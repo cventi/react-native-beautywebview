@@ -8,7 +8,7 @@ import {
   Text,
 } from 'react-native';
 import { images, colors } from '../res';
-import { CutomMenu } from './CustomMenu';
+import { CustomMenu } from './CustomMenu';
 import BackgroundProgress from './BackgroundProgress';
 
 export const Header = ({
@@ -71,7 +71,7 @@ export const Header = ({
         <Icon onPress={onPressForward} content={forward} />
       }
       <View>
-        <CutomMenu
+        <CustomMenu
           extraMenuItems={extraMenuItems}
           contentType={contentType}
           openBrowserTitle={openBrowserTitle}
