@@ -83,28 +83,29 @@ const BeautyWebView = ({
       setForwardQueue([]);
       setCurrentUrl(url);
     }, 200);
-  } 
+  }
 
   return (
     <Modal visible={visible} transparent={false} animationType={animationType}>
       <View style={[styles.container, { backgroundColor: backgroundColor }]}>
         <Header
           backgroundColor={headerBackground}
+          backgroundProgressRefOnChange={setBackgroundProgressRef}
+          canback={backQueue.length > 0}
+          canForward={forwardQueue.length > 0}
+          closeIcon={closeIcon}
           contentType={headerContent}
+          copyLinkTitle={copyLinkTitle}
+          extraMenuItems={extraMenuItems}
+          loadingText={loadingText}
+          menuIcon={menuIcon}
+          navigationVisible={navigationVisible}
+          onPressBack={onPressBack}
+          onPressClose={onClose}
+          onPressForward={onPressForward}
+          openBrowserTitle={openBrowserTitle}
           title={title}
           url={currentUrl}
-          onPressClose={onClose}
-          copyLinkTitle={copyLinkTitle}
-          openBrowserTitle={openBrowserTitle}
-          extraMenuItems={extraMenuItems}
-          backgroundProgressRefOnChange={setBackgroundProgressRef}
-          navigationVisible={navigationVisible}
-          canForward={forwardQueue.length > 0}
-          canback={backQueue.length > 0}
-          onPressBack={onPressBack}
-          onPressForward={onPressForward}
-          closeIcon={closeIcon}
-          menuIcon={menuIcon}
         />
         {
           progressBarType === 'normal' &&
