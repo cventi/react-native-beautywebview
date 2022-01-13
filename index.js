@@ -120,8 +120,8 @@ const BeautyWebView = ({
             let loadingProgress = nativeEvent.progress;
             onProgress(loadingProgress);
           }}
-          injectedJavaScript="window.ReactNativeWebView.postMessage(document.title)"
-          onMessage={event => setTitle(event.nativeEvent.data)}
+          injectedJavaScript={`window.ReactNativeWebView.postMessage(document.title||'${title}')`}
+          // onMessage={event => setTitle(event.nativeEvent.data)}
           onLoadEnd={onLoadEnd}
           onLoadStart={onLoadStart}
           onNavigationStateChange={onNavigationStateChange}
