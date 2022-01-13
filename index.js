@@ -6,30 +6,31 @@ import Progress from './components/Progress';
 import { colors } from './res';
 
 const BeautyWebView = ({
-  visible,
-  onPressClose,
-  backgroundColor,
-  headerContent, // 'dark' || 'light', default 'dark'
-  headerBackground, // default #fff
-  url, // Required
-  progressColor,
-  progressHeight,
-  loadingText,
-  copyLinkTitle,
-  openBrowserTitle,
-  extraMenuItems,
   animationType,
-  progressBarType, // 'normal' || 'background'
-  onLoadEnd,
-  onLoadStart,
-  navigationVisible,
+  backgroundColor,
+  cacheEnabled,
+  cacheMode,
   closeIcon,
+  copyLinkTitle,
+  extraMenuItems,
+  headerBackground, // default #fff
+  headerContent, // 'dark' || 'light', default 'dark'
+  incognito,
+  loadingText,
   menuIcon,
+  navigationVisible,
   onGoBack,
   onGoForward,
-  incognito,
-  cacheEnabled,
-  cacheMode
+  onLoadEnd,
+  onLoadStart,
+  onPressClose,
+  openBrowserTitle,
+  progressBarType, // 'normal' || 'background'
+  progressColor,
+  progressHeight,
+  title,
+  url, // Required
+  visible,
 }) => {
   const [progressRef, setProgressRef] = useState(null);
   const [backgroundProgressRef, setBackgroundProgressRef] = useState(null);
