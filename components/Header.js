@@ -13,21 +13,21 @@ import BackgroundProgress from './BackgroundProgress';
 
 export const Header = ({
   backgroundColor,
-  title,
-  contentType,
-  onPressClose,
-  url,
-  openBrowserTitle,
-  copyLinkTitle,
-  extraMenuItems,
   backgroundProgressRefOnChange,
   canback,
   canForward,
+  closeIcon,
+  contentType,
+  copyLinkTitle,
+  extraMenuItems,
+  menuIcon,
   navigationVisible,
   onPressBack,
+  onPressClose,
   onPressForward,
-  closeIcon,
-  menuIcon
+  openBrowserTitle,
+  title,
+  url,
 }) => {
   let forward;
   let back;
@@ -100,7 +100,7 @@ const Icon = ({ onPress, content, icon }) => {
 const styles = StyleSheet.create({
   container: {
     alignSelf: 'stretch',
-    height: Platform.OS == 'android' ? 50 : 60,
+    height: Platform.OS == 'android' ? 70 : 80,
     zIndex: 1,
     flexDirection: 'row',
     alignItems: 'flex-end',
