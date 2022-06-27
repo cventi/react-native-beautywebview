@@ -143,6 +143,7 @@ export default App;
 | onPressClose | function | - | YES | Run on press the close button (You must set visibilty as false) |  
 | url | string | - | YES | URL of the website |
 | backgroundColor | string | #fff | - | Background color of view |
+| headerContainerStyle | object | undefined | - | Extra styles for the header |
 | headerContent | 'dark' or 'light' | 'dark' | - | Content type of header items like icons |
 | headerBackground | string | #fff | - | Background of header |
 | progressColor | string | #2196f3 | - | Color of the progress bar |
