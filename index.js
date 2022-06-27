@@ -151,7 +151,7 @@ BeautyWebView.defaultProps = {
   progressHeight: 4,
   loadingText: 'Loading...',
   copyLinkTitle: 'Copy Link',
-  openBrowserTitle: 'Open on Browser',
+  openBrowserTitle: 'Open in Browser',
   animationType: "slide",
   progressBarType: "normal",
   navigationVisible: true
