@@ -39,13 +39,14 @@ export const Header = ({
   if (!canForward) forward = images.forwardDisabled;
   else if (contentType == 'light') forward = images.forwardLight;
   else forward = images.forwardDark
+  const style = [
+    styles.container,
+    { backgroundColor: backgroundColor },
+    headerContainerStyle,
+  ];
   return (
     <View
-      style={[
-        styles.container,
-        { backgroundColor: backgroundColor },
-        headerContainerStyle,
-      ]}>
+      style={style}>
       <Icon onPress={onPressClose} content={contentType === 'light' ? images.closeLight : images.closeDark} icon={closeIcon} />
       {navigationVisible &&
         <Icon onPress={onPressBack} content={back} />
