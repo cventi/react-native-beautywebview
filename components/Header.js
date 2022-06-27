@@ -20,6 +20,7 @@ export const Header = ({
   contentType,
   copyLinkTitle,
   extraMenuItems,
+  headerContainerStyle,
   menuIcon,
   navigationVisible,
   onPressBack,
@@ -43,6 +44,7 @@ export const Header = ({
       style={[
         styles.container,
         { backgroundColor: backgroundColor },
+        headerContainerStyle,
       ]}>
       <Icon onPress={onPressClose} content={contentType === 'light' ? images.closeLight : images.closeDark} icon={closeIcon} />
       {navigationVisible &&

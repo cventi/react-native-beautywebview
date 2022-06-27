@@ -14,6 +14,7 @@ const BeautyWebView = ({
   copyLinkTitle,
   extraMenuItems,
   headerBackground, // default #fff
+  headerContainerStyle,
   headerContent, // 'dark' || 'light', default 'dark'
   incognito,
   loadingText,
@@ -94,6 +95,7 @@ const BeautyWebView = ({
           canback={backQueue.length > 0}
           canForward={forwardQueue.length > 0}
           closeIcon={closeIcon}
+          headerContainerStyle={headerContainerStyle},
           contentType={headerContent}
           copyLinkTitle={copyLinkTitle}
           extraMenuItems={extraMenuItems}
