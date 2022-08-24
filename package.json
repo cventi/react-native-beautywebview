@@ -15,5 +15,9 @@
     "react-native copy link"
   ],
   "author": "İlker Kesici <ilkerrkesici@gmail.com> (https://github.com/ilkerkesici)",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "linkify-html": "^3.0.5",
+    "linkifyjs": "^3.0.5"
+  }
 }
