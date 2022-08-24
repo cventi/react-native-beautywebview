@@ -18,6 +18,7 @@
   "license": "ISC",
   "dependencies": {
     "linkify-html": "^3.0.5",
-    "linkifyjs": "^3.0.5"
+    "linkifyjs": "^3.0.5",
+    "react-native-webview": "^11.23.0"
   }
 }
