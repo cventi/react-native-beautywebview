@@ -3,7 +3,6 @@ import { StyleSheet, Modal, View } from 'react-native';
 import { WebView } from 'react-native-webview';
 import { Header } from './components/Header';
 import Progress from './components/Progress';
-import linkifyHtml from 'linkify-html';
 import { colors } from './res';
 
 const BeautyWebView = ({
@@ -87,9 +86,6 @@ const BeautyWebView = ({
     }, 200);
   }
 
-  const converturl = linkifyHtml(currentUrl);
-  const platform = Platform.OS === 'ios' ? {uri: currentUrl} : {html: converturl};
-  console.log(converturl);
   return (
     <Modal visible={visible} transparent={false} animationType={animationType}>
       <View style={[styles.container, { backgroundColor: backgroundColor }]}>
@@ -122,7 +118,7 @@ const BeautyWebView = ({
           />
         }
         <WebView
-          source={ platform }
+          source={{uri: currentUrl }}
           onLoadProgress={({ nativeEvent }) => {
             let loadingProgress = nativeEvent.progress;
             onProgress(loadingProgress);
