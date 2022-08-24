@@ -131,6 +131,7 @@ const BeautyWebView = ({
           incognito={incognito}
           cacheEnabled={cacheEnabled}
           cacheMode={cacheMode}
+          javaScriptEnabled={true}
         />
       </View>
     </Modal>
