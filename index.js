@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { StyleSheet, Modal, View } from 'react-native';
+import { StyleSheet, Modal, View, Platform } from 'react-native';
 import { WebView } from 'react-native-webview';
+import PDFReader from 'rn-pdf-reader-js';
 import { Header } from './components/Header';
 import Progress from './components/Progress';
 import { colors } from './res';
@@ -117,6 +118,7 @@ const BeautyWebView = ({
             ref={(progress) => setProgressRef(progress)}
           />
         }
+        {Platform.OS === 'ios' ? (
         <WebView
           source={{ uri: currentUrl }}
           onLoadProgress={({ nativeEvent }) => {
@@ -132,6 +134,13 @@ const BeautyWebView = ({
           cacheEnabled={cacheEnabled}
           cacheMode={cacheMode}
         />
+        ) : (
+          <PDFReader
+          source={{
+            uri: currentUrl
+          }}
+        />
+        )}
       </View>
     </Modal>
   );
