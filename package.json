@@ -19,7 +19,6 @@
   "dependencies": {
     "expo-constants": "^13.2.4",
     "expo-file-system": "^14.1.0",
-    "react-native-webview": "^11.23.0",
     "rn-pdf-reader-js": "^4.1.1"
   }
 }
