@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { StyleSheet, Modal, View, Platform } from 'react-native';
 import { WebView } from 'react-native-webview';
-import PDFReader from '"github:cventi/rn-pdf-reader-js"';
+import PDFReader from 'github:cventi/rn-pdf-reader-js';
 import { Header } from './components/Header';
 import Progress from './components/Progress';
 import { colors } from './res';
