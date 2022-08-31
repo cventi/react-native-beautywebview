@@ -139,7 +139,6 @@ const BeautyWebView = ({
           source={{
             uri: currentUrl
           }}
-          withPinchZoom={true}
         />
         )}
       </View>
